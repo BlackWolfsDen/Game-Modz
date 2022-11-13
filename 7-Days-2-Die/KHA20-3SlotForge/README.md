@@ -1,5 +1,3 @@
-#   ModInfo
-
 #       Name 
 *       "Khaine's 3-slot Forge Input"
 
@@ -11,5 +9,3 @@
 
 #       Version : 
 *       "1.0.0"
-
-#   /ModInfo
