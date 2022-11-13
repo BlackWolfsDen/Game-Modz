@@ -1,0 +1,20 @@
+<item name="solarCell">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mglass"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="4000"/>
+	<property name="Group" value="Resources"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="ShowQuality" value="true"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="1000,6000"/>
+	</property>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000,6000" tier="1,6"/>
+	</effect_group>
+</item>
+
