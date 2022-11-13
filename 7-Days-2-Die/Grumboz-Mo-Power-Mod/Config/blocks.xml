@@ -1,0 +1,35 @@
+<!--
+Grumboz Mo' Power Mod
+v1.0
+by Grumbo/slp13at420
+
+blocks.xml
+-->
+
+
+<configs>
+    <!-- higher amp solar panels -->
+    <append xpath="/blocks/block[@name='solarbank']">
+        <property name="OutputPerStack" value="220"/> <!-- 30 -->
+        <property name="MaxPower" value="720"/> <!-- 180 -->
+    </append>
+
+    <!-- better generators -->
+    <append xpath="/blocks/block[@name='generatorbank']">
+        <property name="MaxFuel" value="7500"/> <!-- 1000 -->
+        <property name="OutputPerFuel" value="11250"/> <!-- 11250 -->
+        <property name="OutputPerStack" value="2500"/> <!-- 100 :: watts = (value*6)/2 :: 100 = 300 :: 500 = 1500 -->
+        <property name="MaxPower" value="24500"/> <!-- 12250 = 300w :: 24500 = 600w :: 36750 = 900w-->
+    </append>
+
+    <!-- higher amp deep cycle battery bank -->
+    <append xpath="/blocks/block[@name='batterybank']">
+        <property name="MaxPower" value="1200"/> <!-- 400 -->
+        <property name="InputPerTick" value="7"/> <!-- 5 -->
+        <property name="ChargePerInput" value="2"/> <!-- 1 -->
+        <property name="OutputPerStack" value="200"/> <!-- 50 -->
+        <property name="OutputPerCharge" value="180"/> <!-- 90 -->
+    </append>
+
+
+</configs>
