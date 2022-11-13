@@ -1,2 +1,2 @@
 # Game-Modz
-*central hub for different game modz*
+**central hub for different game modz
