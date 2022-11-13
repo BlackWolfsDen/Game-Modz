@@ -1,0 +1,14 @@
+<item name="casinoCoin">
+	<property name="Tags" value="dukes"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapBrassSmall"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Weight" value="1"/>
+	<property name="Stacknumber" value="20000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+</item>
+
