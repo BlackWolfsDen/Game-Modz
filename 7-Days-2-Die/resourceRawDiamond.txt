@@ -1,0 +1,8 @@
+<item name="resourceRawDiamond">
+	<property name="Extends" value="resourceSilverNugget"/>
+	<property name="Tags" value="gems"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="CraftingIngredientTime" value="60"/>
+	<property name="DescriptionKey" value="rareOresGroupDesc"/>
+</item>
+
