@@ -1,0 +1,24 @@
+<item name="carBattery">
+	<property name="HoldType" value="45"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+	<property name="Material" value="MresourceScrapLeadLarge"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Weight" value="160"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Resources,Chemicals"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="ShowQuality" value="true"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="1000,6000"/> <!-- needed for electrical calculations -->
+		<property name="BatteryMaxLoadInVolts" value="24, 36"/>
+		<property name="BatteryDischargeTimeInMinutes" value="30,90"/>
+	</property>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="5000,10000" tier="1,6"/>
+	</effect_group>
+</item>
+
