@@ -1,0 +1,42 @@
+using Newtonsoft.Json;
+using Oxide.Core;
+using Oxide.Core.Libraries;
+using Oxide.Core.Libraries.Covalence;
+using Oxide.Core.Plugins;
+using Oxide.Game.Rust.Cui;
+using Oxide.Game.Rust.Libraries;
+
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+
+namespace Oxide.Plugins
+{
+	[Info("TimeOfDayEventHooksDefaultAlarms", "Grumbo", "1.0")]
+	[Description("Test default Event Hooks")]
+
+	public class BigBentester : RustPlugin
+	{
+        #region Oxide Hooks
+
+        private void OnDawn(string msg, string name, string time, bool service)
+        {
+            PrintWarning(msg);
+        }
+        private void OnNoon(string msg, string name, string time, bool service)
+		{
+				PrintWarning(msg);
+		}
+        private void OnDusk(string msg, string name, string time, bool service)
+        {
+            PrintWarning(msg);
+        }
+        private void OnMidnight(string msg, string name, string time, bool service)
+        {
+            PrintWarning(msg);
+        }
+        #endregion
+    }
+}
