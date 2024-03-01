@@ -14,8 +14,8 @@ using System.Text;
 
 namespace Oxide.Plugins
 {
-	[Info("TimeOfDayEventHooksDefaultAlarms", "Grumbo", "1.0")]
-	[Description("Test default Event Hooks")]
+	[Info("Grumbo'z BigBen tester", "Grumbo", "1.0")]
+	[Description("Tests examples of default Event Hooks")]
 
 	public class BigBentester : RustPlugin
 	{
