@@ -33,4 +33,4 @@ or simply -->
             var chest = TryOpenEvent();
         }
 
-the method name must match the event hook name 'OnDangerousTreasuresStart'
+the method name must match the event hook name 'OnDangerousTreasuresStart' or it wont subscribe.
