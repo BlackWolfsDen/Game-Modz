@@ -10,3 +10,20 @@ edit/add/delete times as you wish keeping standard 24hr format HH:MM
 Oxide.reload BigBen
 
 and Dangerous will now be under controll of 1 central hub for better synchronization of all your PvE Plugins.
+
+
+at line 2456 you will find the event hook subriber method. -->
+
+        private void OnDangerousTreasuresStart(string msg, bool service)
+        {
+            /*
+             Adaption for Grumbo'z Big Ben Master Control File.
+            allows this pve event to be triggered by Big Ben's
+            custon event hook "OnDangerousTreasuresStart" -- MUST BE ADDED to Big Ben json file
+              i.e.  "DangerousTreasuresStart": "06:00,12:00,18:00,00:00"
+
+            */
+            var chest = TryOpenEvent();
+        }
+
+the method name must match the event hook name 'OnDangerousTreasuresStart'
