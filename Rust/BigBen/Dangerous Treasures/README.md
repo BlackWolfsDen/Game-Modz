@@ -26,5 +26,11 @@ at line 2456 you will find the event hook subriber method. -->
             */
             var chest = TryOpenEvent();
         }
+or simply -->
+
+        private void OnDangerousTreasuresStart(string msg, bool service)
+        {
+            var chest = TryOpenEvent();
+        }
 
 the method name must match the event hook name 'OnDangerousTreasuresStart'
