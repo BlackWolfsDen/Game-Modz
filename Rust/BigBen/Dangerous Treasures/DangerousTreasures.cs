@@ -2453,18 +2453,6 @@ namespace Oxide.Plugins
             SubscribeHooks(false);
         }
 
-        private void OnDangerousTreasuresStart(string msg, bool service)
-        {
-            /*
-             Adaption for Grumbo'z Big Ben Master Control File.
-            allows this pve event to be triggered by Big Ben's
-            custon event hook "OnDangerousTreasuresStart" -- MUST BE ADDED to Big Ben json file
-              i.e.  "DangerousTreasuresStart": "06:00,12:00,18:00,00:00"
-
-            */
-            var chest = TryOpenEvent();
-        }
-
         void OnServerInitialized(bool isStartup)
         {
             LoadData();
