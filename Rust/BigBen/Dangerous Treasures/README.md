@@ -3,7 +3,8 @@ This is a modded version of Dangerous Treasures by nivex --> https://umod.org/pl
 edit dangerous treasures and verify automation is disabled.
 add time entries to The BigBen json file
 
-      "DangerousTreasuresStart": "06:00,12:00,18:00"
+          "DangerousTreasuresStart": "06:00,07:00,08:00,09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00"
+
 
 edit/add/delete times as you wish keeping standard 24hr format HH:MM
 
