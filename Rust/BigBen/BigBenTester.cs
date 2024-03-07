@@ -25,18 +25,22 @@ namespace Oxide.Plugins
 
         private void OnDawn(string msg, string name, string time, bool service)
         {
+	// DO your Stuff
             PrintWarning(msg);
         }
         private void OnNoon(string msg, string name, string time, bool service)
 	{
+ 	// Do your stuff
  	    PrintWarning(msg);
 	}
         private void OnDusk(string msg, string name, string time, bool service)
         {
+	// Do your stuff
             PrintWarning(msg);
         }
         private void OnMidnight(string msg, string name, string time, bool service)
         {
+	// Do your stuff
             PrintWarning(msg);
         }
         #endregion
