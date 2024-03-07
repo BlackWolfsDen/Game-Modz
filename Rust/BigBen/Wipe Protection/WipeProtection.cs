@@ -58,6 +58,19 @@ namespace Oxide.Plugins
             CheckTime();
         }
 
+        private void OnWipeProtectStart()
+        {
+            DateTime now = DateTime.Now;
+            DateTime rs = now.AddHours(configData.Settings.wipeprotecctime);
+            storedData.wipeprotection = true;
+            storedData.lastwipe = SaveRestore.SaveCreatedTime.ToString();
+            storedData.RaidStartTime = rs.ToString();
+            SaveFile();
+
+            SendChatMessage("raid protection has Started.");
+
+        }
+
         private void CheckTime()
         {
             timer.Every(30f, () => {
