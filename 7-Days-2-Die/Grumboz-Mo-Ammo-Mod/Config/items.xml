@@ -22,9 +22,4 @@ items.xml
 
     <!-- 9mm ball -->
 		<setattribute xpath="/items/item[@name='ammoBundle9mmBulletBall']/property[@name='Stacknumber']" name="value">25</setattribute>
-    <!-- 7.62 ball -->
-		<setattribute xpath="/items/item[@name='ammoBundle762mmBulletBall']/property[@name='Stacknumber']" name="value">5</setattribute>
-    <!-- shotgun shell -->
-		<setattribute xpath="/items/item[@name='ammoBundleShotgunShell']/property[@name='Stacknumber']" name="value">25</setattribute>
-
 </configs>
