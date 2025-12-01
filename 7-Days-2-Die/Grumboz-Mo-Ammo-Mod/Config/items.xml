@@ -1,5 +1,5 @@
 <!--
-Grumboz Mo' Power Mod
+Grumboz Mo' Ammo Mod
 v1.0
 by Grumbo/slp13at420
 
@@ -9,21 +9,22 @@ items.xml
 
 <configs>
     <!-- 9mm ball -->
-    <append xpath="/items/item[@name='ammo9mmBulletBall']">
-        <property name="Stacknumber" value="900"/>	<!-- 300 -->
-    </append>
-
-    <append xpath="/items/item[@name='ammoBundle9mmBulletBall']">
-        <property name="Stacknumber" value="25"/>	<!-- 10 -->
-    </append>
+		<setattribute xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']" name="value">900</setattribute>
 
     <!-- 7.62 ball -->
-    <append xpath="/items/item[@name='ammo762mmBulletBall']">
-        <property name="Stacknumber" value="900"/>	<!-- 150 -->
-    </append>
+ 		<setattribute xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']" name="value">1500</setattribute>
 
     <!-- shotgun shell -->
-    <append xpath="/items/item[@name='ammoShotgunShell']">
-        <property name="Stacknumber" value="300"/>	<!-- 150 -->
-    </append>
+		<setattribute xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']" name="value">300</setattribute>
+
+
+<!--  *** Crafted_Ammo_Bundles  -->
+
+    <!-- 9mm ball -->
+		<setattribute xpath="/items/item[@name='ammoBundle9mmBulletBall']/property[@name='Stacknumber']" name="value">25</setattribute>
+    <!-- 7.62 ball -->
+		<setattribute xpath="/items/item[@name='ammoBundle762mmBulletBall']/property[@name='Stacknumber']" name="value">5</setattribute>
+    <!-- shotgun shell -->
+		<setattribute xpath="/items/item[@name='ammoBundleShotgunShell']/property[@name='Stacknumber']" name="value">25</setattribute>
+
 </configs>
